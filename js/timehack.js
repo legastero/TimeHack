@@ -14,7 +14,7 @@ function TimeHack() {
         this.time = 0;
         this.mode = "Break";
         document.getElementById("break_bell").play();
-        document.body.style.backgroundImage = "url(img/bg_play.png)";
+        document.body.style.backgroundImage = "url(img/bg_break.png)";
 
         var self = this;
         this.break_timer = setTimeout(function () {
