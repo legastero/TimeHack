@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TimeHack: (10+2)*5</title>
+    <link rel="stylesheet" type="text/css" href="css/timehack.css" />
+    <script src="js/timehack.js"></script>
+  </head>
+  <body>
+    <!--
+    Audio from freesound.org.
+
+    By djgriffin (http://www.freesound.org/usersViewSingle.php?id=45941)
+       tibetan bell with mouth.wav
+       (http://www.freesound.org/samplesViewSingle.php?id=15402)
+       tibetan bell.wav
+       (http://www.freesound.org/samplesViewSingle.php?id=15401)
+    -->
+    <audio id="break_bell" autobuffer="autobuffer">
+      <source src="audio/tibetan_bell.mp3" />
+      <source src="audio/tibetan_bell.ogg" />
+    </audio>
+    <audio id="work_bell" autobuffer="autobuffer">
+      <source src="audio/tibetan_bell_mouth.mp3" />
+      <source src="audio/tibetan_bell_mouth.ogg" />
+    </audio>
+    <div id="timehack">
+      <h1 id="iteration"></h1>
+      <h2 id="mode"></h2>
+      <p id="timer"></p>
+      <script>
+        timehack = new TimeHack();
+        timehack.start();
+      </script>
+    </div>
+  </body>
+</html>
