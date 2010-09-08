@@ -9,6 +9,9 @@
     <meta name="format-detection" content="telephone=no" /> 
     <link rel="stylesheet" type="text/css" href="css/timehack.css" />
     <script src="js/timehack.js"></script>
+    <script>
+      timehack = new TimeHack();
+    </script>
   </head>
   <body>
     <!--
@@ -29,13 +32,11 @@
       <source src="audio/tibetan_bell_mouth.ogg" />
     </audio>
     <div id="timehack">
-      <h1 id="iteration"></h1>
-      <h2 id="mode"></h2>
-      <p id="timer"></p>
-      <script>
-        timehack = new TimeHack();
-        timehack.start();
-      </script>
+      <h1 id="iteration">(10+2)*5</h1>
+      <h2 id="mode">TimeHack</h2>
+      <p id="timer">
+        <a id="start" onclick="timehack.start();">Start</a>
+      </p>
     </div>
   </body>
 </html>

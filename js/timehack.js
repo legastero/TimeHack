@@ -42,7 +42,7 @@ function TimeHack() {
         this.mode = "Done";
         this.time = 0;
 
-        document.getElementById("timer").innerHTML = "Woohoo!";
+        document.getElementById("timer").innerHTML = 'Woohoo!<br /><br /><a id="start" onclick="timehack.start();">Do it Again</a>';
         document.getElementById("mode").innerHTML = "Done";
         document.getElementById("iteration").innerHTML = "";
         document.body.style.backgroundImage = "url(img/bg.png)";
